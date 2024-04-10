@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Cairo", sans-serif;
+}
+/* For Cart Icon In Header */
+.cart-icon.active svg{
+  color: #32469B !important;
+}
+

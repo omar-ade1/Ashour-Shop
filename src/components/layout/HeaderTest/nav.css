@@ -1,0 +1,97 @@
+.bg-header {
+  background-color: #e6e6e6 !important;
+}
+.navLink {
+  @apply px-2 capitalize block rounded duration-300 font-semibold;
+  &.active {
+    background-color: #009688;
+    color: white;
+  }
+  &:hover {
+    background-color: #80cbc4;
+  }
+}
+.span {
+  position: absolute !important;
+  top: 50% !important;
+}
+.spanOne {
+  transform: rotate(45deg) !important;
+}
+.spanTwo {
+  transform: rotate(-45deg) !important;
+}
+.noBorderBox {
+  box-sizing: initial !important;
+}
+.showLinks {
+  /* display: block ;
+  */
+  width: 100vw;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ccc;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.showOthers {
+  /* display: block ;
+   */
+  width: 50px;
+  padding: 5px;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  background-color: #ccc;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .like,
+  .cart {
+    padding: 2px;
+    border-radius: 5px;
+  }
+  .like:hover,
+  .cart:hover {
+    background-color: #ffcdd2;
+  }
+}
+.showLinks li {
+  margin: 0 !important;
+  width: 100%;
+}
+.showLinks li a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  transition: 0.3s;
+  position: relative;
+  font-weight: 600;
+}
+.showLinks li a.active {
+  background-color: #009688;
+}
+.showLinks li a p {
+  position: relative;
+}
+.showLinks li a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #80cbc4;
+  transition: 0.3s;
+  z-index: 0;
+}
+.showLinks li a:hover::before {
+  width: 100%;
+}

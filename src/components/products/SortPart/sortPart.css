@@ -1,0 +1,7 @@
+.selectSort {
+  @apply border-2 border-[#4A5568] p-1  px-3 rounded text-[#4A5568] capitalize focus-visible:outline-none focus-visible:border-[#32469B] ;
+}
+.links_to_pages a.active {
+  background-color: white;
+  @apply shadow-md rounded text-[#32469B]
+}
